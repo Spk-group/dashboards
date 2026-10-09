@@ -1,0 +1,110 @@
+{
+ "client": "CNOSF",
+ "maj": "2026-10-09T11:00:00+02:00",
+ "campagnes": [
+  {
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "campagne": "SPK0483__Santé Mentale",
+   "libelle": "Ouvre le Je · Santé mentale",
+   "objectif": "Interactions",
+   "statut": "En diffusion",
+   "debut": "2026-10-08",
+   "fin": "2026-10-15",
+   "budget": 950,
+   "depense": 92.43,
+   "impressions": 157939,
+   "couverture": 142283,
+   "frequence": 1.11,
+   "clics_lien": 80,
+   "lectures_video": 71647,
+   "vues_video": 179,
+   "engagements": 2436,
+   "maj": "2026-10-09T11:00:00+02:00"
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-10-08",
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "libelle": "Ouvre le Je · Santé mentale",
+   "depense": 48.34,
+   "impressions": 89428,
+   "couverture": 85028,
+   "clics_lien": 60,
+   "lectures_video": 37485,
+   "vues_video": 102,
+   "engagements": 1255
+  },
+  {
+   "date": "2026-10-09",
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "libelle": "Ouvre le Je · Santé mentale",
+   "depense": 44.09,
+   "impressions": 68511,
+   "couverture": 61889,
+   "clics_lien": 20,
+   "lectures_video": 34162,
+   "vues_video": 77,
+   "engagements": 1181
+  }
+ ],
+ "plateformes": [
+  {
+   "plateforme": "Instagram",
+   "reseau": "Meta",
+   "depense": 64.9,
+   "impressions": 93520,
+   "couverture": 87655,
+   "clics_lien": 32,
+   "vues_video": 159,
+   "engagements": 2022
+  },
+  {
+   "plateforme": "Facebook",
+   "reseau": "Meta",
+   "depense": 27.53,
+   "impressions": 64419,
+   "couverture": 54510,
+   "clics_lien": 48,
+   "vues_video": 20,
+   "engagements": 414
+  }
+ ],
+ "ensembles": [
+  {
+   "ensemble_id": "120252762026770717",
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "ensemble": "VIDÉO MASTER IG",
+   "publicite": "Carrousel Ouvre le Je",
+   "budget": 650,
+   "depense": 64.37,
+   "impressions": 92033,
+   "couverture": 86654,
+   "frequence": 1.06,
+   "clics_lien": 32,
+   "lectures_video": 68229,
+   "vues_video": 159,
+   "engagements": 2018
+  },
+  {
+   "ensemble_id": "120252762086160717",
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "ensemble": "VIDÉO MASTER FB",
+   "publicite": "Carrousel Ouvre le Je",
+   "budget": 300,
+   "depense": 28.06,
+   "impressions": 65906,
+   "couverture": 55552,
+   "frequence": 1.19,
+   "clics_lien": 48,
+   "lectures_video": 3418,
+   "vues_video": 20,
+   "engagements": 418
+  }
+ ]
+}

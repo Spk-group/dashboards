@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>CNOSF · Campagnes en cours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,800;1,900&display=swap">
+<style>
+body{margin:0}
+
+/* Layout : bandeau titre SPK, rangée de chiffres clés, graphique pleine largeur, deux cartes, tableaux. Charte SPK, fond noir assumé (une seule ambiance). */
+:root{
+  --bg:#0B0B0C;
+  --panel:#151517;
+  --line:#2A2A2E;
+  --fg:#F4F4F5;
+  --muted:#A1A1AA;
+  --accent:#CF0A2C;
+  --accent-soft:#5A1220;
+  --grid:#232327;
+  --ok:#3FB37F;
+  --font-display:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:10px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--fg)}
+body{font-family:var(--font-body);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin-inline:auto;padding:28px 20px 48px;display:flex;flex-direction:column;gap:22px}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px;border-bottom:1px solid var(--line);padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brand b{font-family:var(--font-display);font-style:italic;font-weight:900;font-size:16px;letter-spacing:.02em;color:var(--fg)}
+.brand b span{color:var(--accent)}
+h1{font-family:var(--font-display);font-style:italic;font-weight:900;text-transform:uppercase;font-size:clamp(28px,5vw,46px);line-height:1;letter-spacing:-.01em;margin:10px 0 0;text-wrap:balance}
+h1 em{font-style:italic;color:var(--accent)}
+.meta{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-size:13px;color:var(--muted);text-align:right}
+.live{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--fg)}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(207,10,44,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(207,10,44,.55)}70%{box-shadow:0 0 0 8px rgba(207,10,44,0)}100%{box-shadow:0 0 0 0 rgba(207,10,44,0)}}
+@media (prefers-reduced-motion:reduce){.live i{animation:none}}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,165px),1fr));gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.kpi.lead{background:var(--accent);border-color:var(--accent)}
+.kpi .lab{font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.kpi.lead .lab,.kpi.lead .sub{color:rgba(255,255,255,.82)}
+.kpi .val{font-family:var(--font-display);font-style:italic;font-weight:800;font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.kpi .sub{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+.card h2{font-family:var(--font-display);font-style:italic;font-weight:800;text-transform:uppercase;font-size:17px;letter-spacing:.01em;margin:0}
+.card .note{font-size:12.5px;color:var(--muted);margin:4px 0 14px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:10px}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{font:inherit;font-size:12px;font-weight:600;cursor:pointer;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted)}
+.seg button:hover{color:var(--fg);border-color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chart{position:relative;min-height:260px}
+.chart svg{display:block;width:100%;height:auto}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12px;white-space:nowrap;opacity:0;transition:opacity .12s}
+.tip .d{color:var(--muted)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:12px}
+.pace{display:flex;flex-direction:column;gap:18px}
+.pace h3{font-size:14px;font-weight:600;margin:0 0 8px}
+.row{display:grid;grid-template-columns:118px 1fr 58px;align-items:center;gap:10px;font-size:12.5px;color:var(--muted);margin-top:6px}
+.row b{color:var(--fg);font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:8px;border-radius:999px;background:var(--grid);overflow:hidden}
+.bar span{display:block;height:100%;border-radius:999px;background:var(--accent)}
+.bar.muted span{background:#6B6B73}
+.amt{font-size:12.5px;color:var(--muted);margin-top:10px;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);text-align:right;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:10px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th.l,td.l{text-align:left}
+tbody tr:last-child td{border-bottom:0}
+td.strong{font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid var(--line)}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:#6B6B73}
+.pill.on::before{background:var(--accent)}
+.share{display:flex;align-items:center;justify-content:flex-end;gap:8px}
+.share .bar{width:70px}
+.defs{font-size:12.5px;color:var(--muted);margin:10px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:5px;max-width:80ch}
+.defs b{color:var(--fg);font-weight:600}
+.empty{color:var(--muted);font-size:13px;padding:12px 0}
+footer{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:520px){.wrap{padding:20px 16px 36px}.meta{align-items:flex-start;text-align:left}.kpi .val{font-size:26px}.row{grid-template-columns:96px 1fr 52px}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="brand"><b>SPK<span>.</span></b> Reporting paid social</div>
+      <h1>CNOSF <em>·</em> Campagnes en cours</h1>
+    </div>
+    <div class="meta">
+      <span class="live"><i></i><span id="take">—</span></span>
+      <span>Mis à jour le <span id="maj">—</span></span>
+    </div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Indicateurs clés"></section>
+
+  <section class="card" id="jour">
+    <div class="head">
+      <div><h2>Diffusion jour par jour</h2><p class="note">Toutes campagnes en cours, sur leur période de diffusion. Le jour de mise à jour est partiel.</p></div>
+      <div class="seg" id="seg" role="group" aria-label="Indicateur affiché">
+        <button type="button" id="m-depense" data-k="depense" aria-pressed="true">Dépense</button>
+        <button type="button" id="m-impressions" data-k="impressions" aria-pressed="false">Impressions</button>
+        <button type="button" id="m-couverture" data-k="couverture" aria-pressed="false">Couverture</button>
+        <button type="button" id="m-engagements" data-k="engagements" aria-pressed="false">Engagements</button>
+        <button type="button" id="m-clics" data-k="clics_lien" aria-pressed="false">Clics</button>
+      </div>
+    </div>
+    <div class="chart" id="chart"><div class="tip" id="tip"></div></div>
+  </section>
+
+  <div class="two">
+    <section class="card" id="rythme">
+      <h2>Rythme de diffusion</h2>
+      <p class="note">Part du budget dépensé et part de la période écoulée, par campagne.</p>
+      <div class="pace" id="pace"></div>
+    </section>
+    <section class="card" id="plateformes">
+      <h2>Par plateforme</h2>
+      <p class="note">Campagnes en cours, depuis leur lancement.</p>
+      <div class="scroll"><table id="t-plat"><thead><tr>
+        <th class="l">Plateforme</th><th>Dépense</th><th>Part</th><th>Impressions</th><th>Couverture</th><th>Engagements</th><th>Clics</th>
+      </tr></thead><tbody></tbody></table></div>
+    </section>
+  </div>
+
+  <section class="card" id="campagnes">
+    <h2>Campagnes</h2>
+    <p class="note">Résultats cumulés depuis le lancement de chaque campagne.</p>
+    <div class="scroll"><table id="t-camp"><thead><tr>
+      <th class="l">Campagne</th><th class="l">Réseau</th><th class="l">Statut</th><th>Début</th><th>Fin</th><th>Budget</th><th>Dépense</th><th>Impressions</th><th>Couverture</th><th>Répétition</th><th>Engagements</th><th>Vues vidéo</th><th>Clics</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="card" id="ensembles">
+    <h2>Détail par ensemble de publicités</h2>
+    <p class="note">Une ligne par ensemble de diffusion et sa publicité.</p>
+    <div class="scroll"><table id="t-ens"><thead><tr>
+      <th class="l">Ensemble</th><th class="l">Publicité</th><th>Budget</th><th>Dépense</th><th>Impressions</th><th>Couverture</th><th>Répétition</th><th>Engagements</th><th>Vues vidéo</th><th>Clics</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section class="card" id="definitions">
+    <h2>Définitions</h2>
+    <ul class="defs">
+      <li><b>Couverture</b> : nombre de comptes uniques ayant vu au moins une publicité. Le total est dédupliqué sur la durée de chaque campagne ; il ne s'additionne pas d'un jour à l'autre.</li>
+      <li><b>Répétition</b> : nombre moyen d'expositions par personne touchée (impressions / couverture).</li>
+      <li><b>CPM</b> : dépense pour 1 000 impressions. <b>CTR</b> : clics sur lien / impressions.</li>
+      <li><b>Engagements</b> : interactions avec la publicité (réactions, commentaires, partages, clics, lectures). <b>Taux</b> : engagements / impressions.</li>
+      <li><b>Vues vidéo</b> : lectures d'au moins 15 secondes ou jusqu'à la fin (ThruPlay).</li>
+      <li>Données mises à jour chaque jour ; le dernier jour affiché est partiel jusqu'à la mise à jour suivante.</li>
+    </ul>
+  </section>
+
+  <footer><span>CNOSF × SPK</span><span id="foot">—</span></footer>
+</div>
+
+<script id="cnosf-data" type="application/json">null</script>
+<script>
+(() => {
+  const nb = (s) => s.replace(/ /g, ' ');
+  const ok = (n) => n !== null && n !== undefined && n !== '' && !isNaN(Number(n));
+  const F = {
+    eur: (n) => ok(n) ? nb(Math.round(Number(n)).toLocaleString('fr-FR')) + ' €' : 'n/d',
+    cost: (n) => ok(n) ? Number(n).toFixed(2).replace('.', ',') + ' €' : 'n/d',
+    vol: (n) => {
+      if (!ok(n)) return 'n/d';
+      n = Number(n);
+      if (Math.abs(n) >= 1e6) return (n / 1e6).toFixed(1).replace('.', ',') + 'M';
+      if (Math.abs(n) >= 1000) return (n / 1000).toFixed(1).replace('.', ',') + 'K';
+      return String(Math.round(n));
+    },
+    pct: (n) => ok(n) ? (Number(n) * 100).toFixed(1).replace('.', ',') + ' %' : 'n/d',
+    pct2: (n) => ok(n) ? (Number(n) * 100).toFixed(2).replace('.', ',') + ' %' : 'n/d',
+    dec: (n) => ok(n) ? Number(n).toFixed(2).replace('.', ',') : 'n/d',
+    day: (s) => s ? new Intl.DateTimeFormat('fr-FR', {day: 'numeric', month: 'short', timeZone: 'UTC'}).format(new Date(String(s).slice(0, 10) + 'T00:00:00Z')) : 'n/d',
+    stamp: (s) => {
+      const d = new Date(s);
+      if (isNaN(d)) return 'n/d';
+      return new Intl.DateTimeFormat('fr-FR', {day: 'numeric', month: 'long', timeZone: 'Europe/Paris'}).format(d) + ' à ' +
+        new Intl.DateTimeFormat('fr-FR', {hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris'}).format(d);
+    },
+    text: (s) => (s === null || s === undefined || s === '') ? 'n/d' : String(s),
+  };
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+  const sum = (rows, k) => rows.reduce((a, r) => a + (Number(r[k]) || 0), 0);
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  const sv = (tag, attrs) => { const e = document.createElementNS(SVGNS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+
+  let D = null;
+  let metric = 'depense';
+  const METRICS = {
+    depense: {label: 'Dépense', f: F.eur},
+    impressions: {label: 'Impressions', f: F.vol},
+    couverture: {label: 'Couverture', f: F.vol},
+    engagements: {label: 'Engagements', f: F.vol},
+    clics_lien: {label: 'Clics sur lien', f: F.vol},
+  };
+
+  function render() {
+    const C = D.campagnes || [], Q = D.quotidien || [], P = D.plateformes || [], E = D.ensembles || [];
+    // En-tête
+    const live = C.filter((r) => r.statut === 'En diffusion').length;
+    const nets = [...new Set(C.map((r) => r.reseau))].join(', ');
+    $('take').textContent = C.length ? (live === 1 ? '1 campagne en diffusion' : live + ' campagnes en diffusion') + (nets ? ' · ' + nets : '') : 'Aucune campagne en diffusion à date';
+    const maj = D.maj || (C[0] && C[0].maj);
+    $('maj').textContent = maj ? F.stamp(maj) : '—';
+    $('foot').textContent = maj ? 'Données au ' + F.stamp(maj) : '';
+
+    // Chiffres clés
+    const T = {depense: sum(C, 'depense'), budget: sum(C, 'budget'), impressions: sum(C, 'impressions'), couverture: sum(C, 'couverture'), clics: sum(C, 'clics_lien'), eng: sum(C, 'engagements')};
+    const has = C.length > 0;
+    const tiles = [
+      {lab: 'Budget dépensé', val: has ? F.eur(T.depense) : '—', sub: has ? 'sur ' + F.eur(T.budget) + ' · ' + F.pct(T.budget ? T.depense / T.budget : null) : '', lead: true},
+      {lab: 'Couverture', val: has ? F.vol(T.couverture) : '—', sub: 'personnes touchées'},
+      {lab: 'Impressions', val: has ? F.vol(T.impressions) : '—', sub: has ? 'Répétition ' + F.dec(T.couverture ? T.impressions / T.couverture : null) : ''},
+      {lab: 'CPM', val: has ? F.cost(T.impressions ? T.depense / T.impressions * 1000 : null) : '—', sub: 'coût pour 1 000 impressions'},
+      {lab: 'Engagements', val: has ? F.vol(T.eng) : '—', sub: has ? 'Taux ' + F.pct(T.impressions ? T.eng / T.impressions : null) : ''},
+      {lab: 'Clics sur lien', val: has ? F.vol(T.clics) : '—', sub: has ? 'CTR ' + F.pct2(T.impressions ? T.clics / T.impressions : null) : ''},
+    ];
+    $('kpis').replaceChildren(...tiles.map((t) => {
+      const k = el('div', 'kpi' + (t.lead ? ' lead' : ''));
+      k.append(el('span', 'lab', t.lab), el('span', 'val', t.val), el('span', 'sub', t.sub));
+      return k;
+    }));
+
+    drawChart(C, Q);
+    drawPace(C);
+
+    // Plateformes
+    const totP = sum(P, 'depense');
+    fill('t-plat', P.slice().sort((a, b) => b.depense - a.depense), [
+      (r) => el('td', 'l strong', F.text(r.plateforme)),
+      (r) => el('td', '', F.eur(r.depense)),
+      (r) => { const td = el('td'); const w = el('div', 'share'); const b = el('div', 'bar'); const s = el('span'); s.style.width = (totP ? r.depense / totP * 100 : 0) + '%'; b.append(s); w.append(b, el('span', '', F.pct(totP ? r.depense / totP : null))); td.append(w); return td; },
+      (r) => el('td', '', F.vol(r.impressions)),
+      (r) => el('td', '', F.vol(r.couverture)),
+      (r) => el('td', '', F.vol(r.engagements)),
+      (r) => el('td', '', F.vol(r.clics_lien)),
+    ]);
+    // Campagnes
+    fill('t-camp', C.slice().sort((a, b) => b.depense - a.depense), [
+      (r) => el('td', 'l strong', F.text(r.libelle || r.campagne)),
+      (r) => el('td', 'l', F.text(r.reseau)),
+      (r) => { const td = el('td', 'l'); td.append(el('span', 'pill' + (r.statut === 'En diffusion' ? ' on' : ''), F.text(r.statut))); return td; },
+      (r) => el('td', '', F.day(r.debut)),
+      (r) => el('td', '', F.day(r.fin)),
+      (r) => el('td', '', F.eur(r.budget)),
+      (r) => el('td', '', F.eur(r.depense)),
+      (r) => el('td', '', F.vol(r.impressions)),
+      (r) => el('td', '', F.vol(r.couverture)),
+      (r) => el('td', '', F.dec(r.frequence)),
+      (r) => el('td', '', F.vol(r.engagements)),
+      (r) => el('td', '', F.vol(r.vues_video)),
+      (r) => el('td', '', F.vol(r.clics_lien)),
+    ]);
+    // Ensembles
+    fill('t-ens', E.slice().sort((a, b) => b.depense - a.depense), [
+      (r) => el('td', 'l strong', F.text(r.ensemble)),
+      (r) => el('td', 'l', F.text(r.publicite)),
+      (r) => el('td', '', F.eur(r.budget)),
+      (r) => el('td', '', F.eur(r.depense)),
+      (r) => el('td', '', F.vol(r.impressions)),
+      (r) => el('td', '', F.vol(r.couverture)),
+      (r) => el('td', '', F.dec(r.frequence)),
+      (r) => el('td', '', F.vol(r.engagements)),
+      (r) => el('td', '', F.vol(r.vues_video)),
+      (r) => el('td', '', F.vol(r.clics_lien)),
+    ]);
+  }
+
+  function fill(id, rows, cells) {
+    const tb = $(id).tBodies[0];
+    if (!rows.length) { const tr = el('tr'); const td = el('td', 'l empty', 'Aucune ligne à date.'); td.colSpan = cells.length; tr.append(td); tb.replaceChildren(tr); return; }
+    tb.replaceChildren(...rows.map((r) => { const tr = el('tr'); cells.forEach((c) => tr.append(c(r))); return tr; }));
+  }
+
+  function drawPace(C) {
+    const box = $('pace');
+    if (!C.length) { box.replaceChildren(el('p', 'empty', 'Aucune campagne en diffusion.')); return; }
+    box.replaceChildren(...C.map((c) => {
+      const t0 = Date.parse(c.debut + 'T00:00:00+02:00'), t1 = Date.parse(c.fin + 'T23:59:59+02:00'), now = Date.parse(c.maj || D.maj);
+      const pb = Number(c.budget) ? c.depense / c.budget : null;
+      const pt = t1 > t0 ? Math.min(1, Math.max(0, (now - t0) / (t1 - t0))) : null;
+      const b = el('div');
+      b.append(el('h3', '', c.libelle || c.campagne));
+      [['Budget dépensé', pb, ''], ['Période écoulée', pt, 'muted']].forEach(([lab, v, cls]) => {
+        const row = el('div', 'row');
+        const bar = el('div', 'bar ' + cls); const s = el('span'); s.style.width = (Math.min(1, v || 0) * 100) + '%'; bar.append(s);
+        row.append(el('span', '', lab), bar, el('b', '', F.pct(v)));
+        b.append(row);
+      });
+      b.append(el('div', 'amt', F.eur(c.depense) + ' dépensés sur ' + F.eur(c.budget) + ' · du ' + F.day(c.debut) + ' au ' + F.day(c.fin)));
+      return b;
+    }));
+  }
+
+  function drawChart(C, Q) {
+    const box = $('chart'), tip = $('tip');
+    box.querySelectorAll('svg,.empty').forEach((n) => n.remove());
+    if (!Q.length) { box.append(el('p', 'empty', 'Pas encore de diffusion sur la période.')); return; }
+    const m = METRICS[metric];
+    const byDay = new Map();
+    Q.forEach((r) => { const d = String(r.date).slice(0, 10); byDay.set(d, (byDay.get(d) || 0) + (Number(r[metric]) || 0)); });
+    const dates = [...C.map((r) => r.debut), ...C.map((r) => r.fin), ...byDay.keys()].filter(Boolean).sort();
+    const days = [];
+    for (let t = Date.parse(dates[0] + 'T00:00:00Z'), end = Date.parse(dates[dates.length - 1] + 'T00:00:00Z'); t <= end; t += 864e5) days.push(new Date(t).toISOString().slice(0, 10));
+    const majDay = String(D.maj || (C[0] && C[0].maj) || '').slice(0, 10);
+
+    const W = Math.max(300, box.clientWidth || 700), H = 260, top = 24, bottom = 30, right = 6;
+    const max = Math.max(...days.map((d) => byDay.get(d) || 0), 1);
+    // échelle "propre"
+    const step0 = Math.pow(10, Math.floor(Math.log10(max / 4)));
+    const step = [1, 2, 2.5, 5, 10].map((k) => k * step0).find((s) => max / s <= 4.5) || step0 * 10;
+    const yMax = Math.ceil(max / step) * step;
+    const ticks = []; for (let v = 0; v <= yMax + 1e-9; v += step) ticks.push(v);
+    const y = (v) => top + (H - top - bottom) * (1 - v / yMax);
+
+    const svg = sv('svg', {viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': m.label + ' par jour'});
+    box.insertBefore(svg, tip);
+    // marge gauche mesurée
+    let ml = 0;
+    ticks.forEach((t) => { const tx = sv('text', {'font-size': 12, 'font-family': 'Montserrat, sans-serif'}); tx.textContent = m.f(t); svg.append(tx); ml = Math.max(ml, tx.getComputedTextLength()); tx.remove(); });
+    const left = Math.ceil(ml) + 12;
+    const stepX = (W - left - right) / days.length;
+    const bw = Math.min(34, stepX * 0.64);
+    const cx = (i) => left + stepX * i + stepX / 2;
+
+    ticks.forEach((t) => {
+      svg.append(sv('line', {x1: left, x2: W - right, y1: y(t), y2: y(t), stroke: t === 0 ? '#3A3A40' : '#232327', 'stroke-width': 1}));
+      const tx = sv('text', {x: left - 8, y: y(t), dy: '0.32em', 'text-anchor': 'end', fill: '#A1A1AA', 'font-size': 12, 'font-family': 'Montserrat, sans-serif'});
+      tx.textContent = m.f(t); svg.append(tx);
+    });
+    const every = Math.max(1, Math.ceil(46 / stepX));
+    days.forEach((d, i) => {
+      if (i % every === 0) {
+        const tx = sv('text', {x: cx(i), y: H - 9, 'text-anchor': 'middle', fill: '#A1A1AA', 'font-size': 12, 'font-family': 'Montserrat, sans-serif'});
+        tx.textContent = F.day(d); svg.append(tx);
+      }
+      const v = byDay.get(d);
+      if (v === undefined) {
+        svg.append(sv('rect', {x: cx(i) - bw / 2, y: y(0) - 3, width: bw, height: 3, rx: 1.5, fill: '#3A3A40'}));
+        return;
+      }
+      const r = sv('rect', {x: cx(i) - bw / 2, y: y(v), width: bw, height: Math.max(0, y(0) - y(v)), rx: 4, fill: '#CF0A2C', opacity: d === majDay ? 0.55 : 1, tabindex: 0});
+      r.style.cursor = 'default';
+      svg.append(r);
+      if (stepX >= 48) {
+        const lab = sv('text', {x: cx(i), y: y(v) - 7, 'text-anchor': 'middle', fill: '#F4F4F5', 'font-size': 12, 'font-weight': 600, 'font-family': 'Montserrat, sans-serif'});
+        lab.textContent = m.f(v); svg.append(lab);
+      }
+      const show = () => {
+        r.setAttribute('opacity', 0.8);
+        tip.replaceChildren(el('div', 'd', F.day(d) + (d === majDay ? ' · journée en cours' : '')), el('div', '', m.label + ' : ' + m.f(v)));
+        const bb = box.getBoundingClientRect(), sc = bb.width / W;
+        tip.style.opacity = '1';
+        const tw = tip.offsetWidth;
+        tip.style.left = Math.min(Math.max(cx(i) * sc - tw / 2, 0), bb.width - tw) + 'px';
+        tip.style.top = Math.max(0, y(v) * sc - tip.offsetHeight - 10) + 'px';
+      };
+      const hide = () => { r.setAttribute('opacity', d === majDay ? 0.55 : 1); tip.style.opacity = '0'; };
+      r.addEventListener('mouseenter', show); r.addEventListener('focus', show);
+      r.addEventListener('mouseleave', hide); r.addEventListener('blur', hide);
+    });
+  }
+
+  $('seg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-k]');
+    if (!b || !D) return;
+    metric = b.dataset.k;
+    $('seg').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    drawChart(D.campagnes || [], D.quotidien || []);
+  });
+  let rt; window.addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => D && drawChart(D.campagnes || [], D.quotidien || []), 120); });
+
+  const boot = (data) => { D = data; render(); if (document.fonts) document.fonts.ready.then(() => drawChart(D.campagnes || [], D.quotidien || [])); };
+  let embedded = null;
+  try { embedded = JSON.parse(document.getElementById('cnosf-data').textContent); } catch (e) { embedded = null; }
+  if (embedded && embedded.campagnes) boot(embedded);
+  else fetch('data.json', {cache: 'no-store'}).then((r) => r.json()).then(boot).catch(() => {
+    $('take').textContent = 'Données indisponibles pour le moment';
+  });
+})();
+</script>
+
+</body>
+</html>
