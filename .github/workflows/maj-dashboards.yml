@@ -1,0 +1,29 @@
+name: MAJ dashboards clients
+
+on:
+  schedule:
+    - cron: "45 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: CNOSF
+        env:
+          META_TOKEN: ${{ secrets.META_TOKEN }}
+        run: python scripts/update_dashboard.py 405672701808500 cnosf-ointxv CNOSF
+      - name: Publier
+        run: |
+          git config user.name "SPK dashboards"
+          git config user.email "noreply@spk-group.fr"
+          git add -A
+          git diff --cached --quiet || git commit -m "MAJ données $(date -u +%F)"
+          git push
