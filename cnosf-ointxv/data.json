@@ -1,6 +1,6 @@
 {
  "client": "CNOSF",
- "maj": "2026-10-15T08:12:31+02:00",
+ "maj": "2026-10-16T08:11:07+02:00",
  "campagnes": [
   {
    "reseau": "Meta",
@@ -12,15 +12,15 @@
    "debut": "2026-10-08",
    "fin": "2026-10-16",
    "budget": 2400.0,
-   "depense": 2214.04,
-   "impressions": 2488446,
-   "couverture": 1184707,
-   "clics_lien": 1203,
-   "lectures_video": 1189764,
-   "vues_video": 60753,
-   "engagements": 220153,
-   "frequence": 2.1,
-   "maj": "2026-10-15T08:12:31+02:00"
+   "depense": 2383.38,
+   "impressions": 2576740,
+   "couverture": 1222010,
+   "clics_lien": 1243,
+   "lectures_video": 1248804,
+   "vues_video": 70587,
+   "engagements": 251573,
+   "frequence": 2.11,
+   "maj": "2026-10-16T08:11:07+02:00"
   }
  ],
  "quotidien": [
@@ -107,58 +107,71 @@
    "reseau": "Meta",
    "campaign_id": "120252762026760717",
    "libelle": "Ouvre le Je · Santé mentale",
-   "depense": 449.76,
-   "impressions": 516406,
-   "couverture": 433215,
+   "depense": 449.9,
+   "impressions": 516639,
+   "couverture": 433306,
    "clics_lien": 343,
-   "lectures_video": 183453,
-   "vues_video": 9905,
-   "engagements": 35550
+   "lectures_video": 183513,
+   "vues_video": 9909,
+   "engagements": 35571
   },
   {
    "date": "2026-10-15",
    "reseau": "Meta",
    "campaign_id": "120252762026760717",
    "libelle": "Ouvre le Je · Santé mentale",
-   "depense": 88.68,
-   "impressions": 85295,
-   "couverture": 81372,
-   "clics_lien": 83,
-   "lectures_video": 28785,
-   "vues_video": 2787,
-   "engagements": 8572
+   "depense": 220.31,
+   "impressions": 162437,
+   "couverture": 155495,
+   "clics_lien": 119,
+   "lectures_video": 78012,
+   "vues_video": 10098,
+   "engagements": 32902
+  },
+  {
+   "date": "2026-10-16",
+   "reseau": "Meta",
+   "campaign_id": "120252762026760717",
+   "libelle": "Ouvre le Je · Santé mentale",
+   "depense": 37.57,
+   "impressions": 10919,
+   "couverture": 10565,
+   "clics_lien": 4,
+   "lectures_video": 9753,
+   "vues_video": 2519,
+   "engagements": 7069
   }
  ],
  "plateformes": [
   {
    "plateforme": "Instagram",
    "reseau": "Meta",
-   "depense": 1638.02,
-   "impressions": 1873112,
-   "couverture": 914300,
-   "clics_lien": 947,
-   "vues_video": 30100,
-   "engagements": 172894
+   "depense": 1755.38,
+   "impressions": 1946064,
+   "couverture": 941967,
+   "clics_lien": 977,
+   "vues_video": 34824,
+   "engagements": 198379
   },
   {
    "plateforme": "Facebook",
    "reseau": "Meta",
-   "depense": 574.05,
-   "impressions": 614653,
-   "couverture": 283565,
-   "clics_lien": 256,
-   "vues_video": 30257,
-   "engagements": 46624
+   "depense": 623.79,
+   "impressions": 629803,
+   "couverture": 290517,
+   "clics_lien": 266,
+   "vues_video": 35236,
+   "engagements": 52582
   },
   {
    "plateforme": "Audience Network",
    "reseau": "Meta",
-   "depense": 2.44,
-   "impressions": 672,
-   "couverture": 540,
+   "depense": 3.2,
+   "impressions": 864,
+   "couverture": 724,
    "clics_lien": 0,
-   "vues_video": 397,
-   "engagements": 650
+   "vues_video": 526,
+   "engagements": 841
   },
   {
    "plateforme": "Threads",
@@ -189,13 +202,13 @@
    "ensemble": "Carrousel IG",
    "publicite": "Carrousel Ouvre le Je",
    "budget": 650.0,
-   "depense": 642.04,
-   "impressions": 922104,
-   "couverture": 468972,
-   "clics_lien": 337,
-   "lectures_video": 745802,
-   "vues_video": 1994,
-   "engagements": 24776,
+   "depense": 649.99,
+   "impressions": 932617,
+   "couverture": 474206,
+   "clics_lien": 342,
+   "lectures_video": 753796,
+   "vues_video": 2018,
+   "engagements": 25089,
    "frequence": 1.97
   },
   {
@@ -205,14 +218,14 @@
    "ensemble": "Carrousel FB",
    "publicite": "Carrousel Ouvre le Je",
    "budget": 300.0,
-   "depense": 295.35,
-   "impressions": 591531,
-   "couverture": 263363,
-   "clics_lien": 224,
-   "lectures_video": 129530,
-   "vues_video": 660,
-   "engagements": 11306,
-   "frequence": 2.25
+   "depense": 299.79,
+   "impressions": 599155,
+   "couverture": 264712,
+   "clics_lien": 225,
+   "lectures_video": 131202,
+   "vues_video": 664,
+   "engagements": 11457,
+   "frequence": 2.26
   },
   {
    "ensemble_id": "120252785450330717",
@@ -221,14 +234,14 @@
    "ensemble": "Vidéo master FB",
    "publicite": "Vidéo Ouvre le Je",
    "budget": 300.0,
-   "depense": 250.41,
-   "impressions": 43635,
-   "couverture": 32667,
-   "clics_lien": 29,
-   "lectures_video": 38579,
-   "vues_video": 26652,
-   "engagements": 32040,
-   "frequence": 1.34
+   "depense": 295.2,
+   "impressions": 51401,
+   "couverture": 38030,
+   "clics_lien": 38,
+   "lectures_video": 45391,
+   "vues_video": 31604,
+   "engagements": 37835,
+   "frequence": 1.35
   },
   {
    "ensemble_id": "120252785498020717",
@@ -237,14 +250,14 @@
    "ensemble": "Vidéo master IG",
    "publicite": "Vidéo Ouvre le Je",
    "budget": 650.0,
-   "depense": 540.84,
-   "impressions": 238186,
-   "couverture": 187015,
+   "depense": 639.05,
+   "impressions": 281244,
+   "couverture": 212589,
    "clics_lien": 3,
-   "lectures_video": 224642,
-   "vues_video": 31253,
-   "engagements": 148700,
-   "frequence": 1.27
+   "lectures_video": 265193,
+   "vues_video": 36150,
+   "engagements": 173964,
+   "frequence": 1.32
   },
   {
    "ensemble_id": "120252820839070717",
@@ -253,14 +266,14 @@
    "ensemble": "Carrousel verbatim IG",
    "publicite": "Carrousel Verbatims",
    "budget": 500.0,
-   "depense": 485.4,
-   "impressions": 692990,
-   "couverture": 458795,
-   "clics_lien": 610,
-   "lectures_video": 51691,
-   "vues_video": 196,
-   "engagements": 3351,
-   "frequence": 1.51
+   "depense": 500.0,
+   "impressions": 712489,
+   "couverture": 467038,
+   "clics_lien": 635,
+   "lectures_video": 53558,
+   "vues_video": 203,
+   "engagements": 3462,
+   "frequence": 1.53
   }
  ]
 }
