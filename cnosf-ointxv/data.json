@@ -1,8 +1,182 @@
 {
  "client": "CNOSF",
- "maj": "2026-11-02T07:46:11+01:00",
- "campagnes": [],
- "quotidien": [],
- "plateformes": [],
- "ensembles": []
+ "maj": "2026-11-03T07:39:43+01:00",
+ "campagnes": [
+  {
+   "reseau": "Meta",
+   "campaign_id": "120253152026310717",
+   "campagne": "JOJ26_META_INTERACTIONS",
+   "libelle": "JOJ26 META INTERACTIONS",
+   "objectif": "Interactions",
+   "statut": "En diffusion",
+   "debut": "2026-11-02",
+   "fin": "2026-11-16",
+   "budget": 1170.0,
+   "depense": 58.92,
+   "impressions": 43803,
+   "couverture": 40728,
+   "clics_lien": 0,
+   "lectures_video": 40998,
+   "vues_video": 5502,
+   "engagements": 29445,
+   "frequence": 1.08,
+   "maj": "2026-11-03T07:39:43+01:00"
+  },
+  {
+   "reseau": "Meta",
+   "campaign_id": "120253151644270717",
+   "campagne": "JOJ26_META_TRAFIC",
+   "libelle": "JOJ26 META TRAFIC",
+   "objectif": "Trafic",
+   "statut": "En diffusion",
+   "debut": "2026-11-02",
+   "fin": "2026-11-13",
+   "budget": 1176.0,
+   "depense": 95.05,
+   "impressions": 44865,
+   "couverture": 42286,
+   "clics_lien": 667,
+   "lectures_video": 504,
+   "vues_video": 12,
+   "engagements": 973,
+   "frequence": 1.06,
+   "maj": "2026-11-03T07:39:43+01:00"
+  }
+ ],
+ "quotidien": [
+  {
+   "date": "2026-11-02",
+   "reseau": "Meta",
+   "campaign_id": "120253151644270717",
+   "libelle": "JOJ26 META TRAFIC",
+   "depense": 60.64,
+   "impressions": 24745,
+   "couverture": 24049,
+   "clics_lien": 371,
+   "lectures_video": 396,
+   "vues_video": 9,
+   "engagements": 566
+  },
+  {
+   "date": "2026-11-02",
+   "reseau": "Meta",
+   "campaign_id": "120253152026310717",
+   "libelle": "JOJ26 META INTERACTIONS",
+   "depense": 34.59,
+   "impressions": 27677,
+   "couverture": 26652,
+   "clics_lien": 0,
+   "lectures_video": 26519,
+   "vues_video": 3443,
+   "engagements": 18348
+  },
+  {
+   "date": "2026-11-03",
+   "reseau": "Meta",
+   "campaign_id": "120253151644270717",
+   "libelle": "JOJ26 META TRAFIC",
+   "depense": 34.41,
+   "impressions": 20120,
+   "couverture": 18704,
+   "clics_lien": 296,
+   "lectures_video": 108,
+   "vues_video": 3,
+   "engagements": 407
+  },
+  {
+   "date": "2026-11-03",
+   "reseau": "Meta",
+   "campaign_id": "120253152026310717",
+   "libelle": "JOJ26 META INTERACTIONS",
+   "depense": 24.33,
+   "impressions": 16126,
+   "couverture": 15051,
+   "clics_lien": 0,
+   "lectures_video": 14479,
+   "vues_video": 2059,
+   "engagements": 11097
+  }
+ ],
+ "plateformes": [
+  {
+   "plateforme": "Instagram",
+   "reseau": "Meta",
+   "depense": 84.91,
+   "impressions": 41893,
+   "couverture": 39271,
+   "clics_lien": 241,
+   "vues_video": 2068,
+   "engagements": 13676
+  },
+  {
+   "plateforme": "Facebook",
+   "reseau": "Meta",
+   "depense": 69.36,
+   "impressions": 46775,
+   "couverture": 42970,
+   "clics_lien": 423,
+   "vues_video": 3446,
+   "engagements": 16736
+  },
+  {
+   "plateforme": "Unknown",
+   "reseau": "Meta",
+   "depense": 0.0,
+   "impressions": 0,
+   "couverture": 0,
+   "clics_lien": 0,
+   "vues_video": 0,
+   "engagements": 2
+  }
+ ],
+ "ensembles": [
+  {
+   "ensemble_id": "120253152026290717",
+   "reseau": "Meta",
+   "campaign_id": "120253152026310717",
+   "ensemble": "Advantage +",
+   "publicite": "Lucie  Schoonheere / Cérémonie d'ouverture / Nathanaël Senga-Kouo / Julie bourgois / Hugo Jeanperrin",
+   "budget": 0.0,
+   "depense": 58.92,
+   "impressions": 43803,
+   "couverture": 40728,
+   "clics_lien": 0,
+   "lectures_video": 40998,
+   "vues_video": 5502,
+   "engagements": 29444,
+   "frequence": 1.08
+  },
+  {
+   "ensemble_id": "120253151644280717",
+   "reseau": "Meta",
+   "campaign_id": "120253151644270717",
+   "ensemble": "Advantage + > Medailles",
+   "publicite": "Bronze Aviron de mer",
+   "budget": 660.0,
+   "depense": 68.73,
+   "impressions": 30682,
+   "couverture": 29209,
+   "clics_lien": 366,
+   "lectures_video": 0,
+   "vues_video": 0,
+   "engagements": 499,
+   "frequence": 1.05
+  },
+  {
+   "ensemble_id": "120253151988530717",
+   "reseau": "Meta",
+   "campaign_id": "120253151644270717",
+   "ensemble": "Advantage + > Récap",
+   "publicite": "Récap du week-end 1",
+   "budget": 516.0,
+   "depense": 26.32,
+   "impressions": 14183,
+   "couverture": 13183,
+   "clics_lien": 298,
+   "lectures_video": 498,
+   "vues_video": 12,
+   "engagements": 474,
+   "frequence": 1.08
+  }
+ ]
 }
