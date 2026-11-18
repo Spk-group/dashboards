@@ -1,6 +1,6 @@
 {
  "client": "CNOSF",
- "maj": "2026-11-17T15:55:50+01:00",
+ "maj": "2026-11-18T15:35:30+01:00",
  "campagnes": [
   {
    "reseau": "Meta",
@@ -12,15 +12,15 @@
    "debut": "2026-11-02",
    "fin": "2026-11-17",
    "budget": 1000.0,
-   "depense": 999.62,
-   "impressions": 448792,
-   "couverture": 283835,
+   "depense": 999.82,
+   "impressions": 449102,
+   "couverture": 283913,
    "clics_lien": 1165,
    "lectures_video": 344015,
    "vues_video": 53448,
-   "engagements": 244820,
+   "engagements": 244834,
    "frequence": 1.58,
-   "maj": "2026-11-17T15:55:50+01:00"
+   "maj": "2026-11-18T15:35:30+01:00"
   },
   {
    "reseau": "Meta",
@@ -40,7 +40,7 @@
    "vues_video": 2130,
    "engagements": 27154,
    "frequence": 2.16,
-   "maj": "2026-11-17T15:55:50+01:00"
+   "maj": "2026-11-18T15:35:30+01:00"
   }
  ],
  "quotidien": [
@@ -387,44 +387,44 @@
    "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
-   "depense": 74.36,
-   "impressions": 25035,
+   "depense": 74.37,
+   "impressions": 25049,
    "couverture": 19823,
    "clics_lien": 3,
    "lectures_video": 0,
    "vues_video": 0,
-   "engagements": 2379
+   "engagements": 2380
   },
   {
    "date": "2026-11-17",
    "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
-   "depense": 56.98,
-   "impressions": 19019,
-   "couverture": 17084,
+   "depense": 57.17,
+   "impressions": 19315,
+   "couverture": 17394,
    "clics_lien": 3,
    "lectures_video": 0,
    "vues_video": 0,
-   "engagements": 1864
+   "engagements": 1877
   }
  ],
  "plateformes": [
   {
    "plateforme": "Facebook",
    "reseau": "Meta",
-   "depense": 1867.22,
-   "impressions": 857000,
-   "couverture": 432894,
+   "depense": 1867.42,
+   "impressions": 857312,
+   "couverture": 433302,
    "clics_lien": 12382,
    "vues_video": 46010,
-   "engagements": 207359
+   "engagements": 207373
   },
   {
    "plateforme": "Instagram",
    "reseau": "Meta",
    "depense": 576.39,
-   "impressions": 233771,
+   "impressions": 233769,
    "couverture": 152681,
    "clics_lien": 3731,
    "vues_video": 9567,
@@ -449,13 +449,13 @@
    "ensemble": "Advantage +",
    "publicite": "Bilan JOJ / Lilia Six Alloncle / Carrousel Aurane Lapouge / Carrousel Vincent Luis / Lucie  Schoonheere / Nathanaël Senga-Kouo / Hugo Jeanperrin / Julie bourgois / Cérémonie d'ouverture",
    "budget": 0.0,
-   "depense": 999.62,
-   "impressions": 448792,
-   "couverture": 283835,
+   "depense": 999.82,
+   "impressions": 449102,
+   "couverture": 283913,
    "clics_lien": 1165,
    "lectures_video": 344015,
    "vues_video": 53448,
-   "engagements": 244820,
+   "engagements": 244834,
    "frequence": 1.58
   },
   {
