@@ -1,6 +1,6 @@
 {
  "client": "CNOSF",
- "maj": "2026-11-22T14:37:42+01:00",
+ "maj": "2026-11-23T17:31:12+01:00",
  "campagnes": [
   {
    "reseau": "Meta",
@@ -20,43 +20,10 @@
    "vues_video": 53448,
    "engagements": 244834,
    "frequence": 1.58,
-   "maj": "2026-11-22T14:37:42+01:00"
-  },
-  {
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "campagne": "JOJ26_META_TRAFIC",
-   "libelle": "JOJ26 META TRAFIC",
-   "objectif": "Trafic",
-   "statut": "Terminée",
-   "debut": "2026-11-02",
-   "fin": "2026-11-16",
-   "budget": 2210.0,
-   "depense": 1443.99,
-   "impressions": 641979,
-   "couverture": 297674,
-   "clics_lien": 14949,
-   "lectures_video": 16264,
-   "vues_video": 2130,
-   "engagements": 27154,
-   "frequence": 2.16,
-   "maj": "2026-11-22T14:37:42+01:00"
+   "maj": "2026-11-23T17:31:12+01:00"
   }
  ],
  "quotidien": [
-  {
-   "date": "2026-11-02",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 60.91,
-   "impressions": 24878,
-   "couverture": 24204,
-   "clics_lien": 376,
-   "lectures_video": 396,
-   "vues_video": 9,
-   "engagements": 571
-  },
   {
    "date": "2026-11-02",
    "reseau": "Meta",
@@ -69,19 +36,6 @@
    "lectures_video": 26638,
    "vues_video": 3464,
    "engagements": 18429
-  },
-  {
-   "date": "2026-11-03",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 123.36,
-   "impressions": 70793,
-   "couverture": 62255,
-   "clics_lien": 1534,
-   "lectures_video": 816,
-   "vues_video": 48,
-   "engagements": 2296
   },
   {
    "date": "2026-11-03",
@@ -99,19 +53,6 @@
   {
    "date": "2026-11-04",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 82.69,
-   "impressions": 50842,
-   "couverture": 40254,
-   "clics_lien": 1034,
-   "lectures_video": 1103,
-   "vues_video": 190,
-   "engagements": 1862
-  },
-  {
-   "date": "2026-11-04",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 62.95,
@@ -121,19 +62,6 @@
    "lectures_video": 37367,
    "vues_video": 5858,
    "engagements": 26822
-  },
-  {
-   "date": "2026-11-05",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 63.69,
-   "impressions": 38834,
-   "couverture": 30495,
-   "clics_lien": 779,
-   "lectures_video": 1722,
-   "vues_video": 332,
-   "engagements": 1817
   },
   {
    "date": "2026-11-05",
@@ -151,19 +79,6 @@
   {
    "date": "2026-11-06",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 114.89,
-   "impressions": 43785,
-   "couverture": 35353,
-   "clics_lien": 1215,
-   "lectures_video": 1989,
-   "vues_video": 503,
-   "engagements": 2648
-  },
-  {
-   "date": "2026-11-06",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 77.34,
@@ -173,19 +88,6 @@
    "lectures_video": 35870,
    "vues_video": 6745,
    "engagements": 24474
-  },
-  {
-   "date": "2026-11-07",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 116.61,
-   "impressions": 53717,
-   "couverture": 39906,
-   "clics_lien": 1373,
-   "lectures_video": 1010,
-   "vues_video": 257,
-   "engagements": 2379
   },
   {
    "date": "2026-11-07",
@@ -203,19 +105,6 @@
   {
    "date": "2026-11-08",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 74.01,
-   "impressions": 34555,
-   "couverture": 28914,
-   "clics_lien": 898,
-   "lectures_video": 874,
-   "vues_video": 212,
-   "engagements": 1580
-  },
-  {
-   "date": "2026-11-08",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 40.92,
@@ -225,19 +114,6 @@
    "lectures_video": 17521,
    "vues_video": 2793,
    "engagements": 9880
-  },
-  {
-   "date": "2026-11-09",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 98.36,
-   "impressions": 44386,
-   "couverture": 33407,
-   "clics_lien": 1217,
-   "lectures_video": 1946,
-   "vues_video": 173,
-   "engagements": 2398
   },
   {
    "date": "2026-11-09",
@@ -255,19 +131,6 @@
   {
    "date": "2026-11-10",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 112.07,
-   "impressions": 46789,
-   "couverture": 36810,
-   "clics_lien": 1548,
-   "lectures_video": 240,
-   "vues_video": 30,
-   "engagements": 2189
-  },
-  {
-   "date": "2026-11-10",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 92.34,
@@ -281,19 +144,6 @@
   {
    "date": "2026-11-11",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 98.01,
-   "impressions": 33557,
-   "couverture": 25731,
-   "clics_lien": 1158,
-   "lectures_video": 750,
-   "vues_video": 79,
-   "engagements": 1932
-  },
-  {
-   "date": "2026-11-11",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 68.49,
@@ -303,32 +153,6 @@
    "lectures_video": 14683,
    "vues_video": 1808,
    "engagements": 11760
-  },
-  {
-   "date": "2026-11-12",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 160.5,
-   "impressions": 61606,
-   "couverture": 45479,
-   "clics_lien": 1287,
-   "lectures_video": 1740,
-   "vues_video": 95,
-   "engagements": 2430
-  },
-  {
-   "date": "2026-11-13",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 101.44,
-   "impressions": 37795,
-   "couverture": 31061,
-   "clics_lien": 880,
-   "lectures_video": 1411,
-   "vues_video": 78,
-   "engagements": 1674
   },
   {
    "date": "2026-11-13",
@@ -346,19 +170,6 @@
   {
    "date": "2026-11-14",
    "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 178.51,
-   "impressions": 76599,
-   "couverture": 54168,
-   "clics_lien": 1232,
-   "lectures_video": 1273,
-   "vues_video": 71,
-   "engagements": 2394
-  },
-  {
-   "date": "2026-11-14",
-   "reseau": "Meta",
    "campaign_id": "120253152026310717",
    "libelle": "JOJ26 META INTERACTIONS",
    "depense": 81.99,
@@ -368,19 +179,6 @@
    "lectures_video": 25783,
    "vues_video": 3845,
    "engagements": 16834
-  },
-  {
-   "date": "2026-11-15",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "libelle": "JOJ26 META TRAFIC",
-   "depense": 58.94,
-   "impressions": 23843,
-   "couverture": 21585,
-   "clics_lien": 418,
-   "lectures_video": 994,
-   "vues_video": 53,
-   "engagements": 984
   },
   {
    "date": "2026-11-16",
@@ -413,22 +211,22 @@
   {
    "plateforme": "Facebook",
    "reseau": "Meta",
-   "depense": 1867.42,
-   "impressions": 857312,
-   "couverture": 433302,
-   "clics_lien": 12382,
-   "vues_video": 46010,
-   "engagements": 207373
+   "depense": 718.94,
+   "impressions": 339891,
+   "couverture": 202205,
+   "clics_lien": 805,
+   "vues_video": 43934,
+   "engagements": 185715
   },
   {
    "plateforme": "Instagram",
    "reseau": "Meta",
-   "depense": 576.39,
-   "impressions": 233769,
-   "couverture": 152681,
-   "clics_lien": 3731,
-   "vues_video": 9567,
-   "engagements": 64608
+   "depense": 280.88,
+   "impressions": 109211,
+   "couverture": 85566,
+   "clics_lien": 360,
+   "vues_video": 9513,
+   "engagements": 59113
   },
   {
    "plateforme": "Unknown",
@@ -436,9 +234,9 @@
    "depense": 0.0,
    "impressions": 0,
    "couverture": 0,
-   "clics_lien": 1,
+   "clics_lien": 0,
    "vues_video": 1,
-   "engagements": 7
+   "engagements": 6
   }
  ],
  "ensembles": [
@@ -457,54 +255,6 @@
    "vues_video": 53448,
    "engagements": 244834,
    "frequence": 1.58
-  },
-  {
-   "ensemble_id": "120253151644280717",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "ensemble": "Advantage + > Medailles",
-   "publicite": "Aurane et Maël / Meriam benyoub / Louane plisson / Axel Faye / MEZIANE BENHAMMOU / JULIE BOURGIS / ANNA PEETERS / MAXENCE BOTTA / MAËL LAMOURET / Gymnaste medailles / Argent Badminton / Or Rugby à 7 / Bronze Aviron de mer",
-   "budget": 1125.0,
-   "depense": 764.26,
-   "impressions": 311443,
-   "couverture": 165316,
-   "clics_lien": 6807,
-   "lectures_video": 0,
-   "vues_video": 0,
-   "engagements": 10367,
-   "frequence": 1.88
-  },
-  {
-   "ensemble_id": "120253151988530717",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "ensemble": "Advantage + > Récap",
-   "publicite": "Récap jour 14 / Récap jour 13 / Récap jour 12 / Récap jour 11 / Récap jour 10 / Récap jour 9 / Récap jour 8 / Récap jour 7 / Récap jour 6 / Récap jour 5 / Récap jour 4 / Récap jour 3 / Récap du week-end 1",
-   "budget": 945.0,
-   "depense": 628.59,
-   "impressions": 311182,
-   "couverture": 158602,
-   "clics_lien": 7661,
-   "lectures_video": 12099,
-   "vues_video": 782,
-   "engagements": 13248,
-   "frequence": 1.96
-  },
-  {
-   "ensemble_id": "120253168292720717",
-   "reseau": "Meta",
-   "campaign_id": "120253151644270717",
-   "ensemble": "Advantage + > Post feed",
-   "publicite": "Le rugby à 7",
-   "budget": 140.0,
-   "depense": 51.14,
-   "impressions": 19354,
-   "couverture": 12104,
-   "clics_lien": 481,
-   "lectures_video": 4165,
-   "vues_video": 1348,
-   "engagements": 3539,
-   "frequence": 1.6
   }
  ]
 }
